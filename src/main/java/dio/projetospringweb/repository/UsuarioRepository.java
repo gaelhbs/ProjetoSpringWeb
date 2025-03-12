@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Repository
-public class UserRepository {
+public class UsuarioRepository {
     public void save(Usuario usuario) {
         if(usuario.getId()==null){
             System.out.println("SAVE - Recebendo o usuário na camada de repositório");
@@ -20,8 +20,8 @@ public class UserRepository {
 
     }
 
-    public void deleteById(Integer id) {
-        System.out.println(String.format("DELETE/id - Recebendo o id %d para excluir um usuário na camada de repositório"));
+    public void deleteById(String id) {
+        System.out.println("DELETE/id - Recebendo o id " + id + " para excluir um usuário na camada de repositório");
         System.out.println("ID: " + id);
     }
 
